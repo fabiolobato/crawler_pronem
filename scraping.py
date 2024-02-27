@@ -55,7 +55,7 @@ fazer pesquisa com fornecedor para obter o hash, pode usar data de inicio e term
 copiar requisicao como curl, instalar curl se nao tiver
 transformar a requisicao copiada pro python - https://curlconverter.com/python/
 copiar codigo em um arquivo python e executar, redirecionar output para um arquivo html - python3 arquivo.py > out.html
-implementar iteracao com indicePrimeiroResultado e possivelmente dataInicio e dataTermino
+implementar iteracao com indicePrimeiroResultado e possivelmente dataInicio e dataTermino, tratar caso de mudanca nos headers e especialmente nos cookies
 
 para ver o numero total de reclamacoes de uma empresa: consumidor.gov > indicadores > por empresa > pesquisar e clicar em todas
 
