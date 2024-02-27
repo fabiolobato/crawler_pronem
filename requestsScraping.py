@@ -109,11 +109,13 @@ company, iteration = getInitialParams()
 
 while iteration.currentIndex < company.numberOfComplains:
   try:
-    response = requests.post(makeUrl(company, iteration), headers=getHeader(company))
+    response = requests.post(makeUrl(company, iteration))
 
     # Se a requisicao nao foi bem sucedida, renova os parametros que mudam
     # Pode ser necessario tratar outros erros que gerem status diferente de 200, ou tratar os erros a partir dos status
     if response.status_code != 200:
+      print(response.status_code)
+      print(response.text)
       print("Renovando parametros")
       company = updateChangableInfo(company)
       continue
